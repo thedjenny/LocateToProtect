@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:id="@+id/bg_top_header"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/ic_bg_topheader"/>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_photo"
+        android:layout_width="100dp"
+        android:layout_height="92dp"
+        android:layout_margin="28dp"
+
+        app:civ_border_color="#ffffff"
+        app:civ_border_width="2dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="29dp" />
+
+    <TextView
+        android:textSize="20sp"
+        android:text=""
+        android:id="@+id/userName"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/"
+        android:layout_marginTop="32dp"
+        android:layout_margin="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/user_photo"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/userKey"
+        android:layout_width="425dp"
+        android:layout_height="32dp"
+        android:gravity="end"
+        android:paddingTop="26dp"
+        android:text=""
+        android:textAlignment="viewEnd"
+        android:textColor="#ffff"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:textSize="16sp"
+        android:text=""
+        android:id="@+id/user_id"
+        android:fontFamily="@font/"
+        android:textColor="#ffffff"
+        android:layout_marginTop="32dp"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/user_photo"
+        app:layout_constraintTop_toTopOf="@id/userName"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="60dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:columnOrderPreserved="false"
+        android:padding="14dp"
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/bg_top_header"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_editor_absoluteX="0dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/cardColor"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="97dp"
+                    android:layout_height="96dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/pin"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:id="@+id/findme"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Find me"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/"
+                    android:textColor="@color/textcardColor"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/cardColor"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="97dp"
+                    android:layout_height="96dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/findhim"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:id="@+id/finduser"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Find safe places"
+                    android:textColor="@color/textcardColor"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/"
+                    android:textStyle="bold"
+                   />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/cardColor"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="97dp"
+                    android:layout_height="96dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/settings"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:id="@+id/setting"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Setting"
+                    android:textColor="@color/textcardColor"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/cardColor"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="97dp"
+                    android:layout_height="96dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/support"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:id="@+id/contact"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact us"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/textcardColor"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/cardColor"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="97dp"
+                    android:layout_height="96dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/review"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:id="@+id/review"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rate us"
+                    android:textColor="@color/textcardColor"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/cardColor"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="97dp"
+                    android:layout_height="96dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/exit"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:id="@+id/logout"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Disconnect"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/textcardColor"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

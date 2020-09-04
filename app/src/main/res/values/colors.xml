@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3b3b3b</color>
+    <color name="colorPrimaryDark">#232323</color>
+    <color name="colorAccent">#ff7c48</color>
+    <color name="textInputErrorColor">#ff3737</color>
+    <color name="orange">#FD4400</color>
+
+    <color name="cardColor">#ffffff</color>
+    <color name="textcardColor">#3f3f3f</color>
+    <color name="submitColor">#8BC34A</color>
+</resources>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "93535934559",
+    "firebase_url": "https://newprojetl2p.firebaseio.com",
+    "project_id": "newprojetl2p",
+    "storage_bucket": "newprojetl2p.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:93535934559:android:bd16a8f8ca9b03d76ee3ea",
+        "android_client_info": {
+          "package_name": "test.tuto_passport"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "93535934559-p21d2f8ob5bqhovmmia31rkpvpg2t8p2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZDVGtALSpm2WCHflXlGT9U8TZe4wR_4E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "93535934559-p21d2f8ob5bqhovmmia31rkpvpg2t8p2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
